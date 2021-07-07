@@ -18,7 +18,8 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ main ]
   schedule:
-    - cron: '45 13 * * 0'
+    # Friday at 3pm (UTC) -> 5pm Rosenheim
+    - cron: '0 15 * * 5'
 
 jobs:
   analyze:
